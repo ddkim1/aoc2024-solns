@@ -23,7 +23,7 @@ for i in range(len(lines)):
 def in_bounds(x, y):
     return (0 <= x and x < len(grid_map) and 0 <= y and y < len(grid_map[0]))
 
-def pt1_move(x, y, dir, visited):
+def move(x, y, dir, visited):
     while True:
         visited.add((x,y,dir))
         dX, dY = directions[dir]
@@ -42,16 +42,17 @@ def pt1_move(x, y, dir, visited):
 
     return len(visited)
 
-ans1 = pt1_move(starting[0], starting[1], NORTH, set())
+ans1 = move(starting[0], starting[1], NORTH, set())
 ans2 = 0
 
 for i in range(len(grid_map)):
     for j in range(len(grid_map[0])):
         if grid_map[i][j] == '.':
             grid_map[i][j] = '#'
-            if (pt1_move(starting[0], starting[1], NORTH, set()) == 0):
-                ans2 += 1
 
+            if (move(starting[0], starting[1], NORTH, set()) == 0):
+                ans2 += 1
+                
             grid_map[i][j] = '.'
 
 print(ans1)
