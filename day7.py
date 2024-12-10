@@ -1,5 +1,3 @@
-from collections import defaultdict, deque
-
 with open("input/day7_input.txt", "r") as f:
     lines = f.readlines()
 
