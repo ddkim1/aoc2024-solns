@@ -16,6 +16,7 @@ NUM_BLINKS2 = 75
 for i in range(NUM_BLINKS2):
     if i == NUM_BLINKS1:
         ans1 = sum(stones_counter.values())
+        
     new_stones = defaultdict(int)
     for stone in stones_counter.keys():
         # stone is 0 -> turn into 1
