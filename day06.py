@@ -7,7 +7,7 @@ WEST = 3
 
 directions = [(-1,0), (0,1), (1,0), (0,-1)]
 
-with open("input/day6_input.txt", "r") as f:
+with open("input/day06_input.txt", "r") as f:
     lines = f.readlines()
 
 grid_map = []

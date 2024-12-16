@@ -1,4 +1,4 @@
-with open("input/day7_input.txt", "r") as f:
+with open("input/day07_input.txt", "r") as f:
     lines = f.readlines()
 
 def is_solvable_1(target, nums, curr):

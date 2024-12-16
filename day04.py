@@ -2,7 +2,7 @@ xmas = "XMAS"
 p1_directions = [(-1,1),(1,1),(1,-1),(-1,-1),(1,0),(0,1),(-1,0),(0,-1)]
 p2_directions = [(-1,1),(1,1),(1,-1),(-1,-1)]
 
-with open("input/day4_input.txt", "r") as f:
+with open("input/day04_input.txt", "r") as f:
     lines = f.readlines()
 
 xmas_grid = []

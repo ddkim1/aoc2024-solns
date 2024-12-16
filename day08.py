@@ -1,7 +1,7 @@
 from collections import defaultdict, deque
 import math
 
-with open("input/day8_input.txt", "r") as f:
+with open("input/day08_input.txt", "r") as f:
     lines = f.readlines()
 
 antennas = defaultdict(list)

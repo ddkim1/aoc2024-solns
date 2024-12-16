@@ -1,7 +1,7 @@
 from collections import defaultdict, deque
 import math
 
-with open("input/day9_input.txt", "r") as f:
+with open("input/day09_input.txt", "r") as f:
     lines = f.readlines()
 
 line = lines[0].rstrip()

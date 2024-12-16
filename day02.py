@@ -27,7 +27,7 @@ def isSafe1Removed(line):
 def isSafe2(line):
     return isSafe1(line) or isSafe1Removed(line)
 
-with open("input/day2_input.txt", "r") as f:
+with open("input/day02_input.txt", "r") as f:
     lines = f.readlines()
 
 ans1 = 0

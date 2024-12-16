@@ -1,4 +1,4 @@
-with open("input/day3_input.txt", "r") as f:
+with open("input/day03_input.txt", "r") as f:
     lines = f.readlines()
 
 def perform_multiplications_part_1(line):

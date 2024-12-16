@@ -1,6 +1,6 @@
 from collections import defaultdict, deque
 
-with open("input/day5_input.txt", "r") as f:
+with open("input/day05_input.txt", "r") as f:
     lines = f.readlines()
 
 page_graph = defaultdict(set)

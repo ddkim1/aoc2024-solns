@@ -3,7 +3,7 @@ from collections import defaultdict
 a1 = []
 a2 = []
 
-with open("input/day1_input.txt", "r") as f:
+with open("input/day01_input.txt", "r") as f:
     lines = f.readlines()
     a2_freq = defaultdict(int)
 
