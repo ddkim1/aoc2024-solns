@@ -96,7 +96,7 @@ while True:
 grid = [[0] * cols for _ in range(rows)]
 
 # robots are *, empty is .
-def draw_robots(num_seconds):
+def draw_robots():
     # clear grid
     for i in range(rows):
         for j in range(cols):
@@ -114,4 +114,4 @@ def draw_robots(num_seconds):
 
 ans2 = num_seconds
 print(ans2)
-draw_robots(num_seconds)
+draw_robots()
