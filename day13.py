@@ -35,7 +35,7 @@ def parse_prize_line(line):
 
 buttons = []
 prizes = []
-is_b_line = False
+is_second_b_line = False
 current_button = [0, 0, 0, 0]
 
 for line in lines:
@@ -44,12 +44,12 @@ for line in lines:
 
     if line[0] == "B":
         x_num, y_num = parse_button_line(line)
-        if not is_b_line:
-            is_b_line = True
+        if not is_second_b_line:
+            is_second_b_line = True
             current_button[0] = x_num
             current_button[1] = y_num
         else:
-            is_b_line = False
+            is_second_b_line = False
             current_button[2] = x_num
             current_button[3] = y_num
             buttons.append(tuple(current_button))
